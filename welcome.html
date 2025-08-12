@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/website.css')}}">
+</head>
+
+<body>
+    <p>OtakuZone Isekai Shonen Seinen Login</p>
+    <h2>Welcome, {{ username }}!</h2>
+
+   
+
+    <h2>Anime Review website</h2>
+    <p>Shar your opinions on anime or this website. Find anime recommendations</p>
+    <a href="Chat.html">
+        <break><button>Chat Now</button></break>
+    </a>
+    <h1>Different Types Of Anime</h1>
+    <div id='container'>
+        <img src="{{url_for('static', filename = 'Eminence.jpg')}}" id="cid">
+        <img src="{{url_for('static', filename = 'Tanjiro.jpg')}}" id="cid">
+        <img src="{{url_for('static', filename = 'opm.jpg')}}" id="cid">
+    </div>
+
+    <p><strong>Isekai Shonen Seinen</strong></p>
+    <p> Teleport into a new world, where you are reborn. Start a new life! Enjoy the excitements of action scened anime.
+        Enjoy a young adult focused anime. </p>
+
+    <h1>Top Three Animes:</h1>
+    <p>1. placeholder <break>
+            description</break>
+    </p>
+    <p>2. placeholder <break>
+            description</break>
+    </p>
+    <p>3. placeholder <break>
+            description</break>
+    </p>
+    <button>Daily</button><button>Monthly</button><button>Yearly</button>
+    <h1>Reviews</h1>
+    <p> Title placeholder
+        <break>description</break>
+    </p>
+    <p> Title placeholder
+        <break>description</break>
+    </p>
+    <p> Title placeholder
+        <break>description</break>
+    </p>
+
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+</body>
+
+</html>
