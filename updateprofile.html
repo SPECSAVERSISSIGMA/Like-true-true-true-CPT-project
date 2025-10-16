@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/website.css')}}">
+</head>
+
+<body>
+    <div id="menu">
+        <nav>
+            <ul>
+                <p><strong id="custom"><span id="applepie"><a href="{{url_for('welcome')}}" id="nohyper">OtakuZone</a></span></strong>
+                <div id="formatside">
+                <div><span><a href="{{url_for('isekai')}}" id="nohyper1">Isekai</a></span></div>
+                <div><span><a href="{{url_for('shonen')}}" id="nohyper2"> Shonen</a></span></div>
+                <div><span><a href="{{url_for('seinen')}}" id="nohyper3"> Seinen</a></span> </div>
+                <div><span><a href="{{url_for('profile')}}" id="nohyper4">  {{  username }}!!! </a></span></div>
+                </div></p>
+            </ul>
+        </nav>  
+    </div>
+    <div class="anime-container" id="profile-update-container">
+        <h1 class="anime-heading" id="profile-update-title"> Edit Your Anime Profile </h1>
+
+        <!-- Flashed messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul class="flash-messages" id="flash-message-list">
+            {% for category, message in messages %}
+            <li class="flash-message {{ category }}" id="flash-{{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST" id="update-profile-form" class="profile-form">
+            <label for="new-username-input" class="form-label" id="label-new-username">New Username:</label>
+            <input type="text" name="new_username" id="new-username-input" class="form-input anime-input"
+                value="{{ username }}" required>
+
+            <label for="new-password-input" class="form-label" id="label-new-password">New Password:</label>
+            <input type="password" name="new_password" id="new-password-input" class="form-input anime-input" required>
+
+            <button type="submit" class="profile-btn anime-btn" id="submit-update-btn"> Update </button>
+        </form>
+
+        <a href="{{ url_for('profile') }}" class="edit-btn anime-btn" id="back-to-profile-link">← Back to Profile</a>
+    </div>
+</body>
+
+</html>

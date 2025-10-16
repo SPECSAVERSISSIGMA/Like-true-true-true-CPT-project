@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head><title>Sign Up</title></head>
-<body>
-    <h2>Sign Up</h2>
-<!--controling statements-->
+<head>
+  <!--complete css for this and login. Create more pages. -->
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/website.css')}}">
+</head>
+<body id="bodyqxy">
+  <div id="menu">
+    <nav>
+        <ul>
+            <p><strong id="custom"><span id="applepie"><a href="{{url_for('welcome')}}" id="nohyper">OtakuZone</a></span></strong>
+            <div id="formatside">
+            <div><span><a href="{{url_for('isekai')}}" id="nohyper1">Isekai</a></span></div>
+            <div><span><a href="{{url_for('shonen')}}" id="nohyper2"> Shonen</a></span></div>
+            <div><span><a href="{{url_for('seinen')}}" id="nohyper3"> Seinen</a></span> </div>
+            <div><span><a href="{{url_for('profile')}}" id="nohyper4">  {{  username }}!!! </a></span></div>
+            </div></p>
+        </ul>
+    </nav>  
+</div>
+<div id="signup" class="signup-box">
+    <h2 class="signup-title">Sign Up</h2>
+   
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% for category, message in messages %}
-        <p style="color:red">{{ message }}</p>
-<!--% for logic-->
+        <p class="flash-message {{ category }}" id="signup-flash-{{ category }}">{{ message }}</p>
       {% endfor %}
     {% endwith %}
-    <form method="POST">
-        Username: <input type="text" name="username" required><br><br>
-        Password: <input type="password" name="password" required><br><br>
-        <input type="submit" value="Sign Up">
+    <form method="POST" id="signup-form" class="anime-form">
+        Username: <input type="text" name="username" required id="signup-username-input" class="signup-input" maxlength="20"><br><br>
+        Password: <input type="password" name="password" required id="signup-password-input" class="signup-input" maxlength="20" minlength="3"><br><br>
+        <input type="submit" value="Sign Up" id="submit-signup-btn" class="signup-btn">
     </form>
-    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    <p class="login-cta">Already have an account? 
+      <a href="{{ url_for('login') }}" class="login-link" id="login-link">Login here</a>
+    </p>
+  </div>
 </body>
 </html>

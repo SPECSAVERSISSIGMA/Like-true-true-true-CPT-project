@@ -1,12 +1,770 @@
-.container{
+body {
+    background: linear-gradient(120deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+
+}
+
+#bodyqrandom{
+    background: url("../background6.jpg");
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bodyq {
+    background: url("../background2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+
+}
+
+#bodyqx {
+    background: url("../background2withlessr.png");
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+#bodyqy {
+    background: url("../background3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+#bodyqz {
+    background: url("../background4.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+#bodyqxq {
+    background: url("../background5.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+#bodyqxx {
+    background: linear-gradient(140deg, #fdc4ff 0%, #b7fffa 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+
+}
+
+#bodyqxy {
+    background: linear-gradient(140deg, #fdc4ff 0%, #b7fffa 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+
+}
+
+.container {
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+}
+
+.cid {
+
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    border-radius: 30px;
+    border: solid black 2px;
+
+}
+
+.x {
+    margin: 20px;
+    text-align: center;
+    position: absolute;
+    position: relative;
+}
+
+#custom {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: larger;
+
+
+}
+
+#formatside {
+    display: flex;
+    float: right;
+    color: aquamarine;
+    order: initial;
+
+}
+
+#formatside1 {
+    float: right;
+    color: aquamarine;
+}
+
+#formatside2 {
+    float: right;
+    color: aquamarine;
+
+}
+
+#formatside3 {
+    float: right;
+    color: aquamarine;
+
+}
+
+#formatside4 {
+    float: right;
+    color: aquamarine;
 
 }
 
 
-#cid{
-    border: 500px
+#menu {
+    background-color: black;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    border-radius: 30px;
 }
 
+#content {
+
+    color: aliceblue;
+    margin: none;
+}
+
+#nohyper {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+#nohyper1 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#nohyper2 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#nohyper3 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#nohyper4 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#applepie {
+    float: left;
+
+}
+
+#colour1 {
+    color: darkblue;
+    font-family: cursive;
+    font-size: 50px;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#title2 {
+    font-family: fantasy;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+#formatside1:hover {
+    color: rgb(120, 185, 181);
+}
+
+#formatside2:hover {
+    color: rgb(120, 185, 181);
+}
+
+#formatside3:hover {
+    color: rgb(120, 185, 181);
+}
+
+#formatside4:hover {
+    color: rgb(120, 185, 181);
+}
+
+#applepie:hover {
+    color: #005B41;
+}
+
+#nohyper:hover {
+    color: #005B41;
+}
+
+#nohyper1:hover {
+    color: #005B41;
+}
+
+#nohyper2:hover {
+    color: #005B41;
+}
+
+#nohyper3:hover {
+    color: #005B41;
+}
+
+#nohyper4:hover {
+    color: #005B41;
+}
+
+#piewise:hover {
+    color: #C71585;
+}
+
+#piewise1:hover {
+    color: #C71585;
+}
+
+#piewise2:hover {
+    color: #C71585;
+}
+
+#piewise {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#piewise1 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#piewise2 {
+    color: aquamarine;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+}
+
+#standout {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#kebab {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+
+
+}
+
+.Animeimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.Animeimage img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.Animeimage h3 {
+    font-size: 30px;
+    color: palevioletred;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+#middle {
+    color: #C71585;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#login {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    border: solid black 7px;
+}
+
+#signup {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    border: solid black 7px;
+}
+
+
+
+#profile-update-container.anime-container {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 420px;
+    margin: 48px auto;
+    padding: 36px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 35px 2px #fad6a5;
+    text-align: center;
+}
+
+#profile-update-title.anime-heading {
+    color: #ff5eae;
+    font-size: 2.1em;
+    margin-bottom: 34px;
+    text-shadow: 2px 2px 0 #ffe2e2;
+    letter-spacing: 2px;
+}
+
+#flash-message-list.flash-messages {
+    list-style-type: none;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.flash-message.success,
+#flash-success {
+    color: #25cad2;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.flash-message.error,
+#flash-error {
+    color: #eb2f06;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#update-profile-form.profile-form {
+    margin-bottom: 18px;
+}
+
+.form-label,
+#label-new-username,
+#label-new-password {
+    display: block;
+    margin: 20px 0 6px 0;
+    color: #7D5FFF;
+    font-weight: bold;
+    font-size: 1.11em;
+}
+
+.form-input,
+.anime-input,
+#new-username-input,
+#new-password-input {
+    width: 90%;
+    padding: 11px;
+    border: 2px solid #7D5FFF;
+    border-radius: 11px;
+    background: #fdf6ff;
+    font-size: 1em;
+    transition: border .3s;
+    margin-bottom: 14px;
+}
+
+.form-input:focus,
+#new-username-input:focus,
+#new-password-input:focus {
+    border-color: #ff5eae;
+    outline: none;
+    box-shadow: 0 0 5px #ff5eae4d;
+}
+
+.profile-btn,
+.anime-btn,
+#submit-update-btn {
+    background: linear-gradient(90deg, #7D5FFF 60%, #f7ce68 100%);
+    color: #fff;
+    padding: 12px 36px;
+    font-size: 1.15em;
+    border: none;
+    border-radius: 50px;
+    margin-top: 13px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px -3px #fad6a5;
+    transition: background .3s;
+}
+
+.profile-btn:hover,
+.anime-btn:hover,
+#submit-update-btn:hover {
+    background: linear-gradient(90deg, #f7ce68 60%, #7D5FFF 100%);
+}
+
+.edit-btn,
+#back-to-profile-link {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    color: #fff;
+    background: #fbab7e;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 14px;
+    transition: background .2s;
+}
+
+.edit-btn:hover,
+#back-to-profile-link:hover {
+    background: #ff69a6;
+}
+
+.anime-heading {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.anime-input {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#login.login-box {
+    background: rgba(255, 255, 255, 0.97);
+    max-width: 340px;
+    width: 90%;
+    border-radius: 24px;
+    box-shadow: 0 10px 32px 4px #c1fff8;
+    padding: 2.7em 1.7em 1.5em 1.7em;
+    text-align: center;
+    animation: pop-in 0.7s cubic-bezier(0.44, 0.15, 0.59, 1.09);
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.login-title {
+    color: #b75fff;
+    font-size: 2em;
+    margin-bottom: 22px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 0 #fff2ac;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+.flash-message.success,
+#login-flash-success {
+    color: #25cad2;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.flash-message.error,
+#login-flash-error {
+    color: #ff5e57;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.flash-message.info,
+#login-flash-info {
+    color: #1b9af7;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.login-input,
+#username-input,
+#password-input {
+    width: 88%;
+    padding: 10px;
+    border: 1.9px solid #b75fff;
+    border-radius: 13px;
+    background: #f6e7ff;
+    font-size: 1em;
+    margin-bottom: 7px;
+    transition: border .2s;
+}
+
+.login-input:focus,
+#username-input:focus,
+#password-input:focus {
+    border-color: #14a9ff;
+    outline: none;
+    box-shadow: 0 0 6px #a8eaff5c;
+}
+
+.login-btn,
+#submit-login-btn {
+    background: linear-gradient(90deg, #b75fff 60%, #55fdc7 100%);
+    color: #fff;
+    font-size: 1.08em;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 38px;
+    margin-top: 13px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 0 7px 16px -3px #c1fff8;
+    transition: background .2s;
+}
+
+.login-btn:hover,
+#submit-login-btn:hover {
+    background: linear-gradient(90deg, #55fdc7 60%, #b75fff 100%);
+}
+
+.signup-cta {
+    margin-top: 17px;
+    font-size: 1em;
+    color: #7D5FFF;
+}
+
+.signup-link,
+#signup-link {
+    color: #ff5eae;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color .2s;
+}
+
+.signup-link:hover,
+#signup-link:hover {
+    color: #ba68c8;
+    text-decoration: underline wavy;
+}
+
+
+#signup.signup-box {
+    background: rgba(255, 255, 255, 0.97);
+    max-width: 340px;
+    width: 90%;
+    border-radius: 24px;
+    box-shadow: 0 10px 32px 4px #c1fff8;
+    padding: 2.7em 1.7em 1.5em 1.7em;
+    text-align: center;
+    animation: pop-in 0.7s cubic-bezier(0.44, 0.15, 0.59, 1.09);
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.signup-title {
+    color: #b75fff;
+    font-size: 2em;
+    margin-bottom: 22px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 0 #fff2ac;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+.flash-message.success,
+#signup-flash-success {
+    color: #25cad2;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.flash-message.error,
+#signup-flash-error {
+    color: #ff5e57;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.flash-message.info,
+#signup-flash-info {
+    color: #1b9af7;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.signup-input,
+#signup-username-input,
+#signup-password-input {
+    width: 88%;
+    padding: 10px;
+    border: 1.9px solid #b75fff;
+    border-radius: 13px;
+    background: #f6e7ff;
+    font-size: 1em;
+    margin-bottom: 7px;
+    transition: border .2s;
+}
+
+.signup-input:focus,
+#signup-username-input:focus,
+#signup-password-input:focus {
+    border-color: #14a9ff;
+    outline: none;
+    box-shadow: 0 0 6px #a8eaff5c;
+}
+
+.signup-btn,
+#submit-signup-btn {
+    background: linear-gradient(90deg, #b75fff 60%, #55fdc7 100%);
+    color: #fff;
+    font-size: 1.08em;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 38px;
+    margin-top: 13px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 0 7px 16px -3px #c1fff8;
+    transition: background .2s;
+}
+
+.signup-btn:hover,
+#submit-signup-btn:hover {
+    background: linear-gradient(90deg, #55fdc7 60%, #b75fff 100%);
+}
+
+.login-cta {
+    margin-top: 17px;
+    font-size: 1em;
+    color: #7D5FFF;
+}
+
+.login-link,
+#login-link {
+    color: #ff5eae;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color .2s;
+}
+
+.login-link:hover,
+#login-link:hover {
+    color: #ba68c8;
+    text-decoration: underline wavy;
+}
+
+
+.dire, #dire {
+    background: linear-gradient(90deg, #9d52ff 10%, #23c2ff 100%);
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 38px;
+    margin: 18px 0 12px 0;
+    box-shadow: 0 0 24px 0 #85b7ffb8, 0 3px 16px #7e39ff52;
+    letter-spacing: 2px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.17s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.dire:hover, #dire:hover {
+    background: linear-gradient(90deg, #4518ac 0%, #78fafd 100%);
+    box-shadow: 0 0 40px 4px #8886fde3, 0 7px 18px #13d7ffd8;
+    transform: scale(1.09);
+    text-shadow: 0 0 4px #e0e5ff, 0 4px 10px #d2cef87a;
+}
+
+
+.sase, #sase {
+    background: linear-gradient(90deg, #ffaed0 5%, #ffc764 100%);
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Lato', cursive, sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 38px;
+    margin: 18px 0 12px 0;
+    box-shadow: 0 0 24px 0 #f7d1ffb8, 0 3px 16px #ff68a472;
+    letter-spacing: 2px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.17s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.sase:hover, #sase:hover {
+    background: linear-gradient(90deg, #f38cec 0%, #fff5a8 100%);
+    box-shadow: 0 0 40px 4px #ffd7eef0, 0 7px 18px #ffd19ed8;
+    transform: scale(1.09);
+    text-shadow: 0 0 4px #fff4e0, 0 4px 10px #fff8d684;
+}

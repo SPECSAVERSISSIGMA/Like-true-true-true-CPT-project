@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Anime Profile</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/website.css')}}">
+</head>
+<body>
+    <div id="menu">
+        <nav>
+            <ul>
+                <p><strong id="custom"><span id="applepie"><a href="{{url_for('welcome')}}" id="nohyper">OtakuZone</a></span></strong>
+                <div id="formatside">
+                <div><span><a href="{{url_for('isekai')}}" id="nohyper1">Isekai</a></span></div>
+                <div><span><a href="{{url_for('shonen')}}" id="nohyper2"> Shonen</a></span></div>
+                <div><span><a href="{{url_for('seinen')}}" id="nohyper3"> Seinen</a></span> </div>
+                <div><span><a href="{{url_for('profile')}}" id="nohyper4">  {{  username }}!!! </a></span></div>
+                </div></p>
+            </ul>
+        </nav>  
+    </div>
+    <div class="anime-container">
+        <h1>Anime Profile </h1>
+        {% if username %}
+            <p>Welcome, <strong>{{ username }}</strong>!</p>
+            <a href="{{ url_for('update_profile') }}" class="edit-btn">Edit Profile</a>
+        {% else %}
+            <p>Not logged in.</p>
+        {% endif %}
+        <a href="{{ url_for('logout') }}" class="log-btn">Logout</a>
+    </div>
+</body>
+</html>

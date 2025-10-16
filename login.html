@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head><title>Login</title></head>
-<body>
-    <h2>Login</h2>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/website.css')}}">
+</head>
+<body id="bodyqxx">
+  <div id="menu">
+    <nav>
+        <ul>
+            <p><strong id="custom"><span id="applepie"><a href="{{url_for('welcome')}}" id="nohyper">OtakuZone</a></span></strong>
+            <div id="formatside">
+            <div><span><a href="{{url_for('isekai')}}" id="nohyper1">Isekai</a></span></div>
+            <div><span><a href="{{url_for('shonen')}}" id="nohyper2"> Shonen</a></span></div>
+            <div><span><a href="{{url_for('seinen')}}" id="nohyper3"> Seinen</a></span> </div>
+            <div><span><a href="{{url_for('profile')}}" id="nohyper4">  {{  username }}!!! </a></span></div>
+            </div></p>
+        </ul>
+    </nav>  
+</div>
+<div id="login" class="login-box">
+    <h2 class="login-title">Login</h2>
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% for category, message in messages %}
-        <p style="color:red">{{ message }}</p>
-
-        <!--ending for loop and with loops-->
+        <p class="flash-message {{ category }}" id="login-flash-{{ category }}">{{ message }}</p>
       {% endfor %}
     {% endwith %}
-    <form method="POST">
-        Username: <input type="text" name="username" required><br><br>
-        Password: <input type="password" name="password" required><br><br>
-        <input type="submit" value="Login">
+
+    <form method="POST" id="login-form" class="anime-form">
+        Username: <input type="text" name="username" required id="username-input" class="login-input" maxlength="20"><br><br>
+        Password: <input type="password" name="password" required id="password-input" class="login-input" maxlength="20" minlength="3"><br><br>
+        <input type="submit" value="Login" id="submit-login-btn" class="login-btn">
     </form>
-    <p>Don't have an account? <a href="{{ url_for('signup') }}">Sign up here</a></p>
+    <p class="signup-cta">Don't have an account? <a href="{{ url_for('signup') }}" class="signup-link" id="signup-link">Sign up here</a></p>
+  </div>
 </body>
 </html>

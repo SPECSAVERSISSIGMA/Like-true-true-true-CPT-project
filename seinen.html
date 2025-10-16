@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seinen</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/website.css')}}">
+</head>
+
+<body id="bodyqy">
+    <div id="menu">
+        <nav>
+            <ul>
+                <p><strong id="custom"><span id="applepie"><a href="{{url_for('welcome')}}"
+                                id="nohyper">OtakuZone</a></span></strong>
+                <div id="formatside">
+                    <div><span><a href="{{url_for('isekai')}}" id="nohyper1">Isekai</a></span></div>
+                    <div><span><a href="{{url_for('shonen')}}" id="nohyper2"> Shonen</a></span></div>
+                    <div><span><a href="{{url_for('seinen')}}" id="nohyper3"> Seinen</a></span> </div>
+                    <div><span><a href="{{url_for('profile')}}" id="nohyper4"> {{ username }}!!! </a></span></div>
+                </div>
+                </p>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h2 id="standout">Welcome to SEINEN {{ username }}!!!</h2>
+        <p id="middle">Enjoy a young adult focused anime.</p>
+        <div>
+            <marquee scrollamount="50" direction="right" behaviour="alternate">
+                <h1 id="Trend">TRENDING</h1>
+            </marquee>
+            <div id="kebab">
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise">One Punch Man</span></a>
+                    </h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'onepunchman.jpg')}}"
+                            class="cid"></a>
+                </div>
+
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise1">Death Parade</span></a></h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'deathparade.png')}}"
+                            class="cid"></a>
+                </div>
+
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise2">Vinland Saga</span></a></h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'vinlandsaga.jpg')}}"
+                            class="cid"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <marquee scrollamount="50" direction="right" behaviour="alternate">
+                <h1 id="Trend">OTHER</h1>
+            </marquee>
+            <div id="kebab">
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise">Tokyo Ghoul</span></a></h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'tokyoghoul.jpg')}}"
+                            class="cid"></a>
+                </div>
+
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise1">Parasyte</span></a></h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'parasite.jpg')}}"
+                            class="cid"></a>
+                </div>
+
+                <div class="Animeimage">
+                    <h3><a href="{{url_for('Anime')}}"><span id="piewise2">Code Geass</span></a></h3>
+                    <a href="{{url_for('Anime')}}"><img src="{{url_for('static', filename = 'code.jpg')}}"
+                            class="cid"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

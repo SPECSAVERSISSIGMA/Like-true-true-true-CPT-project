@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Anime of the Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/website.css') }}">
+</head>
+<body id="bodyqrandom">
+    <div class="anime-container" id="random-anime-container">
+        <h1 class="anime-heading">Anime of the Day </h1>
+        <p id="anime-message" class="anime-message">{{ message }}</p>
+        {% if username %}
+            <p id="greeting" class="anime-greeting">Hello, {{ username }}!</p>
+        {% endif %}
+        <a href="{{ url_for('welcome') }}">
+            <button class="anime-btn" id="back-profile-btn">← Back to Welcome</button>
+        </a>
+    </div>
+</body>
+</html>
